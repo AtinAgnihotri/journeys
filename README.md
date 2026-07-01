@@ -1,6 +1,5 @@
 # workflow-builder
 
-[![CI](https://github.com/AtinAgnihotri/workflow-builder/actions/workflows/ci.yml/badge.svg)](https://github.com/AtinAgnihotri/workflow-builder/actions/workflows/ci.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 Workflow Builder is a planned TypeScript library and builder UI for representing
@@ -80,6 +79,17 @@ The repo includes a portable Markdown skill at
 Cursor, OpenCode, Claude Code, Codex, T3Code-style harnesses, and similar tools
 can ingest it to understand how to validate, edit, and integrate Workflow
 Builder JSON without inventing a DSL or taking over app routing/state.
+
+## Validation
+
+Run the full local check suite before opening a PR or cutting a release:
+
+```bash
+pnpm validate
+```
+
+This installs with a frozen lockfile, then typechecks, tests, and builds all
+workspace packages. It respects the 1-day package age gate in `.npmrc`.
 
 ## License
 

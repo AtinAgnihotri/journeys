@@ -8,11 +8,11 @@ collect feedback from the community.
 
 ```bash
 pnpm install
-pnpm --filter @workflow-builder/core build
-pnpm build
-pnpm typecheck
-pnpm test
+pnpm validate
 ```
+
+`pnpm validate` runs install (frozen lockfile), typecheck, test, and build — the same
+local validation gate used before releases.
 
 See [docs/contributing.md](docs/contributing.md) for project structure, change
 guidelines, and issue reporting details.
@@ -22,7 +22,7 @@ guidelines, and issue reporting details.
 1. Open an issue for bugs or feature ideas before large changes when possible.
 2. Fork the repository and create a focused branch.
 3. Make your changes with tests for core behavior changes.
-4. Run the full validation suite locally (same commands as CI).
+4. Run `pnpm validate` locally before opening a PR.
 5. Open a pull request using the PR template.
 
 ## Pull request expectations
@@ -57,8 +57,8 @@ bumps and changelog entries once publishing begins:
 3. Follow the [release checklist](docs/release-checklist.md) before the first npm
    publish.
 
-Manual publish is preferred until package contents and exports are verified in
-CI and via `npm pack --dry-run`.
+Manual publish is preferred until package contents and exports are verified via
+`pnpm validate` and `npm pack --dry-run`.
 
 ## Code of conduct
 

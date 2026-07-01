@@ -18,7 +18,7 @@ schema may still evolve.
 
 ### Added (0.4 prep)
 
-- GitHub Actions CI, root governance docs, issue/PR templates
+- Local `pnpm validate` script, root governance docs, issue/PR templates
 - Release checklist and Changesets recommendation ([release-checklist.md](release-checklist.md))
 
 ### Planned

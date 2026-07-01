@@ -9,14 +9,10 @@ exports are verified.
 Run from the repository root:
 
 ```bash
-pnpm install --frozen-lockfile
-pnpm --filter @workflow-builder/core build
-pnpm build
-pnpm typecheck
-pnpm test
+pnpm validate
 ```
 
-Confirm CI is green on the release commit.
+Confirm `pnpm validate` passes on the release commit.
 
 ## Package contents
 
@@ -38,8 +34,8 @@ No source files, tests, or monorepo-only paths should appear.
 ## Package manager security
 
 - Confirm `.npmrc` still enforces `minimum-release-age=1440` (1 day).
-- Do not add CI flags or scripts that bypass the age gate except in a separately
-  reviewed emergency security fix.
+- Do not add install flags or scripts that bypass the age gate except in a
+  separately reviewed emergency security fix.
 - Review the dependency tree; confirm each dependency is still justified.
 
 ## Exports and runtime
@@ -63,7 +59,7 @@ When ready for ongoing releases:
    monorepo (publish `@workflow-builder/core`; keep private workspace packages
    internal).
 3. Contributors add changesets in PRs; maintainers run `pnpm changeset version`
-   and `pnpm changeset publish` (or equivalent GitHub Action) after review.
+   and `pnpm changeset publish` locally after review.
 
 Until Changesets is wired up, bump `packages/core/package.json` version manually
 and tag in git.

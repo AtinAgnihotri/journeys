@@ -7,10 +7,10 @@ with a public roadmap in docs and PRPs.
 
 ```bash
 pnpm install
-pnpm build
-pnpm typecheck
-pnpm test
+pnpm validate
 ```
+
+`pnpm validate` runs install (frozen lockfile), typecheck, test, and build.
 
 ## Project structure
 
@@ -37,7 +37,7 @@ PRPs/            — implementation prompts
 ## Pull requests
 
 - Link related docs or PRP acceptance criteria.
-- Run `pnpm build`, `pnpm typecheck`, and `pnpm test` before opening.
+- Run `pnpm validate` before opening a PR.
 - Include tests for core behavior changes.
 - Avoid drive-by refactors outside the PR scope.
 

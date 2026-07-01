@@ -17,7 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   TanStack Router, Next.js client, edge runtime
 - Docs: quickstart, API reference, examples index, contributing guide, ADR 001
 - Portable agent skill under `skills/workflow-builder/`
-- GitHub Actions CI, governance docs, issue/PR templates, and release checklist
+- Local `pnpm validate` script, governance docs, issue/PR templates, and
+  release checklist
 
 ### Planned
 
