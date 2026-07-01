@@ -19,6 +19,18 @@ to an agent that should not need to re-reason the product from first principles.
 9. [Agent orchestration](08-agent-orchestration.md)
 10. [Portable agent skill](09-portable-agent-skill.md)
 
+## Getting Started
+
+- [Quickstart](quickstart.md)
+- [API reference](api.md)
+- [Examples index](examples.md)
+- [Contributing](contributing.md)
+- [Release notes](release-notes.md)
+
+## Decisions
+
+- [ADR 001: Examples before adapters](adr/001-examples-before-adapters.md)
+
 ## Core Promise
 
 A developer maps application state into a stable workflow context. Product or

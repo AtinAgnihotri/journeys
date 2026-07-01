@@ -10,6 +10,9 @@ build the first version.
 
 ## Start Here
 
+- [Quickstart](docs/quickstart.md)
+- [API reference](docs/api.md)
+- [Examples](docs/examples.md) — runnable code in [`examples/`](examples/)
 - [Product brief](docs/00-product-brief.md)
 - [Architecture](docs/01-architecture.md)
 - [Workflow JSON schema](docs/02-workflow-json-schema.md)
@@ -18,6 +21,8 @@ build the first version.
 - [Integration and adapters](docs/05-integration-and-adapters.md)
 - [Docs site and OSS strategy](docs/06-docs-site-and-oss-strategy.md)
 - [Implementation roadmap](docs/07-implementation-roadmap.md)
+- [Contributing](docs/contributing.md)
+- [Release notes](docs/release-notes.md)
 - [Agent orchestration plan](docs/08-agent-orchestration.md)
 - [Portable agent skill spec](docs/09-portable-agent-skill.md)
 - [Portable Workflow Builder skill](skills/workflow-builder/SKILL.md)
