@@ -283,5 +283,11 @@ Harness-specific notes live in:
 - `harnesses/claude-code.md`
 - `harnesses/codex.md`
 - `harnesses/opencode.md`
+- `harnesses/antigravity.md`
+- `harnesses/t3code.md`
+- `harnesses/pi.md`
+- `harnesses/windsurf.md`
+- `harnesses/cline.md`
+- `harnesses/aider.md`
 
 The canonical instructions are in this file.
